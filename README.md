@@ -91,6 +91,8 @@ Open `crontab -e` and schedule the script to run daily at 11:55 PM:
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | isaac | pts/0 | 192.168.1.10 | Sat | Nov | 21 | 12:45 | still logged in |
 
+<img width="1659" height="744" alt="image" src="https://github.com/user-attachments/assets/92ebc1be-0dde-473c-a8bb-accb0298b937" />
+
 ## Troubleshooting & Lessons Learned
 * **Date Padding Alignment:** Standard `date` output zero-pads single-digit days (`Nov 05`), whereas `last` uses space-padding (`Nov  5`). Resolved by formatting with `date +"%a %b %e"`.
 * **Non-Interactive Execution:** Replaced interactive `read` prompts with dynamic system date evaluation so the script runs unattended inside `cron`.
